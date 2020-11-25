@@ -1,0 +1,96 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Index</title>
+    <style>
+    .scrolltable {
+      display:block;
+      overflow:auto;
+    }
+    </style>
+</head>
+
+<body style="background-image: url('https://postfiles.pstatic.net/MjAyMDA2MzBfMjMx/MDAxNTkzNTIzNTg0MDE5.MwpX0AtsBel9Clebn1aIhTva2r3t_P9HjMa1h0B9SdMg.VP6q--Ofrpom34cBrkOtEnDywiEXusYoDjGaxGhImJQg.PNG.last9500/bg.png?type=w773'); background-size: 100% 100%;">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <div style="background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMTUy/MDAxNTkzNTIzNjc1NDUx.EWWGAvyvXjrtgZ2vTDgCw1Xgcm57_FtlXJJCKZjoUpEg.6cvW88A5xiuXTPRSOqekvqgzrSy2mgrp-VXV0Bb5VqEg.GIF.last9500/testgif.gif?type=w773'); height:170px; overflow:hidden; background-position: center; background-size:50% 100%; align:center;" > <!-- 타이틀 부분 -->
+   <img src="https://postfiles.pstatic.net/MjAyMDA2MzBfNjMg/MDAxNTkzNTIzNjYxMTMy.SJjGLJMf3DBI7CpaSNqxOut9HtIBKB6Bk8EcHGHuad0g.MeKkkwPrgCAamqACZIln24LCFyvsm7cm6Qt_-ZALlf0g.PNG.last9500/test12.png?type=w773" style="width:100%; height:100%; overflow:hidden;">
+  </div>
+  <div style="margin:40px;" align="center"> <!-- 바디 -->
+   <table class="whole_table" style="border-collapse:collapse;">
+   <tr>
+    <td style="background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMjQz/MDAxNTkzNTIzNjA2MTkx.YQMdU0-45rHFuiKlW10xcS8QyBDK5D-cLEuLNdCvELgg.d_fPOhLJKulF-jrHFS8s7zqU8iDWUuGmeeab1OqPQIMg.PNG.last9500/frame1_screen.png?type=w773'); background-size: 100% 100%;" height="40px"></td>
+    <td rowspan="5" width="30px"></td>
+    <td style="background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMTg4/MDAxNTkzNTIzNjI3Njkx.0bnZet1pjiUX6p8VM0B2NTc7ji-1cVtTfVbrstA6z28g.A73PMzKt4c_kmDYKoHWG-3g4xjG0FkyrRKKvjXetsVsg.PNG.last9500/frame_emergency1.png?type=w773'); background-size: 100% 100%;" height="40px"></td>
+   </tr>
+  <tr>
+    <td style="background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMTI3/MDAxNTkzNTIzNjE2MjAz.ZS4hM-Cb0pLnyBQAjI5D9-tYGhzFtOJTvLJ_mZWpSb0g.gkTkPk5rHCXmXM3yN016nasdY4OlGcZaDsidG4mTb1Ug.PNG.last9500/frame2_screen.png?type=w773'); background-size:100% 100%; text-align:center;" width="1280px" height="750px" rowspan="4">
+     <img id="scr_whole" width="1260px" height="760px" src="{{ url_for('video_feed') }}">
+    </td>
+    <td style="background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMTQw/MDAxNTkzNTIzNjM2NDYx.2kzdbyT-gG-6vYszfWqL-WUJcntJR4adCUTOqnBY82Ug.EIb_c4W76Ayo6DCIcQeOj2QcBuCjOKbRis66rSoPEckg.PNG.last9500/frame_emergency2.png?type=w773'); background-size: 100% 100%; text-align:center" width="440px" height="280px">
+     <div class="crop"><img style="border-style:solid;" width="440px" height="260px" src="{{ url_for('isEmg') }}"></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="40px"></td>
+  </tr>
+  <tr>
+    <td style="background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMTQ0/MDAxNTkzNTIzNjQ0Mjcz.X3ncjj3tu0EAd-fApPjQdvFvTR0ht15qfpoiUXPfzEkg.-8zH1ZexdIwnBhASRtG8A4zXn_zGNQB-okwhJW-k-_kg.PNG.last9500/frame_log1.png?type=w773'); background-size: 100% 100%; height:40px;"></td>
+  </tr>
+  <tr>
+    <td rowspan="2" width="440px" height="400px" style="text-align:center; background-image:url('https://postfiles.pstatic.net/MjAyMDA2MzBfMTcz/MDAxNTkzNTIzNjUwODAy.vvgZ_MqGdcPob_GloJPOHIws2F72NmE0FQI0YDfLrjAg.bgwDHLzNbleRGdoG5CSnqmDhBQUQPZflo6I3jbSaUkkg.PNG.last9500/frame_log2.png?type=w773'); background-size: 100% 100%; padding:10px;">
+      <table>
+        <tr><td id ="log_scr" width="440px" height="390px" style="display:block; overflow:auto;"></td></tr>
+       <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+              setInterval(function(){
+                $.ajax({
+                  type : "GET",
+                  url : "/for_log",
+                  dataType : "text",
+                  error : function(){
+                  },
+                  success : function(data){
+                    if(data=='emergency'){
+                      var text = "[System] 응급상황 발생! 상기 이미지 확인 필요";
+                      var br = document.createElement("br");
+                      document.getElementById("log_scr").prepend(br);
+                      document.getElementById("log_scr").prepend(text);
+                      document.getElementById("scr_whole").style.borderStyle = "solid";
+                      document.getElementById("scr_whole").style.borderColor = "red";
+                      document.body.style.backgroundImage = "url('https://postfiles.pstatic.net/MjAyMDA2MzBfMjMx/MDAxNTkzNTIzNTg0MDE5.MwpX0AtsBel9Clebn1aIhTva2r3t_P9HjMa1h0B9SdMg.VP6q--Ofrpom34cBrkOtEnDywiEXusYoDjGaxGhImJQg.PNG.last9500/bg.png?type=w773')";
+                    } else {
+                      document.body.style.backgroundImage = "url('https://postfiles.pstatic.net/MjAyMDA4MTBfMTU1/MDAxNTk3MDY0MTkxNDUx.RLa1rXjFA77b4gOamGYU_Pjcj4a8ZV1qkJRnydI6uAog.8PEDCagzApXxG3WFIe7-WY61UX-61j95qbftO8OO4Lkg.PNG.last9500/bg2.png?type=w773')";
+                      document.getElementById("scr_whole").style.borderStyle= "none";
+                    }
+                  }
+                });
+              }, 1000);
+              setInterval(function(){
+                $.ajax({
+                  type : "GET",
+                  url : "/for_warn_log",
+                  dataType : "text",
+                  error : function(){
+                  },
+                  success : function(data){
+                    if(data=='warning'){
+                      var text = "[System] 현재 움직이지 않는 객체가 있습니다. 객체 인식 오류 또는 응급상황 오인 가능성이 있으니 확인 바랍니다. ";
+                      var br = document.createElement("br");
+                      document.getElementById("log_scr").prepend(br);
+                      document.getElementById("log_scr").prepend(text);
+                    }
+                  }
+                });
+              }, 10000);
+            });
+          </script>
+        </table>
+    </td>
+  </tr>
+  </table>
+  </div>
+</body>
+</html>
